@@ -1,12 +1,13 @@
 # Add  code here!
-def prime?(n)
-   if integer <= 1
+def prime?(i)
+  if i <= 1
     return false
-   elsif n <= 3
-    return true
-   else (2..integer/2).none?
-    integer % n == 0
-   end
-end
 
+  elsif i == 2
+    return true
+
+  else
+    (2..i/2).none? {|n| i % n == 0}
+  end
+end
 
